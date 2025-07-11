@@ -184,4 +184,21 @@
   .gradient-bg-default {
     @apply bg-gradient-to-r from-emerald-400 via-blue-400 to-violet-400;
   }
+
+  @keyframes scroll-continuous {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-${testimonials.length * 384}px);
+    }
+  }
+
+  .animate-scroll-continuous {
+    animation: scroll-continuous 30s linear infinite;
+  }
+
+  .pause-animation:hover {
+    animation-play-state: paused;
+  }
 }

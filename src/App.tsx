@@ -3,6 +3,7 @@ import CTASection from "./components/CTASection"
 import { FeaturesSection } from "./components/FeaturesSection"
 import { Footer } from "./components/Footer"
 import { HeroSection } from "./components/HeroSection"
+import { TestimonialsSection } from "./components/TestimonialSection"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 
       <AboutSection />
       <FeaturesSection />
+      <TestimonialsSection />
       <CTASection />
       <Footer />
     </div>

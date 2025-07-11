@@ -62,8 +62,9 @@ const AboutSection = () => {
             {/* Right Side - Profile */}
             <div className="text-center">
               <div className="relative inline-block mb-8">
-                <div className="w-48 h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto flex items-center justify-center animate-glow">
-                  <User className="w-24 h-24 text-black" />
+                <div className="w-48 h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto flex items-center justify-center animate-glow overflow-hidden ">
+                  {/* <User className="w-24 h-24 text-black" /> */}
+                  <img src="https://github.com/MiguelBizzi.png" alt="Foto de miguel bizzi" />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-green-500 p-3 rounded-full animate-float">
                   <Award className="w-6 h-6 text-black" />
