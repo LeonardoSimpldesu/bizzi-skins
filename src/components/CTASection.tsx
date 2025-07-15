@@ -47,10 +47,12 @@ const CTASection = () => {
 
             <Button
               onClick={handleWhatsAppClick}
-              className="bg-green-500 hover:bg-green-600 text-black font-bold text-xl px-12 py-6 rounded-2xl animate-glow transition-all duration-300 hover:scale-105 group"
+              className="bg-green-500 hover:bg-green-600 text-black font-bold text-xl px-12 py-6 rounded-2xl animate-glow transition-all duration-300 hover:scale-105 group cursor-pointer text-wrap w-full flex-wrap h-fit"
             >
               <MessageCircle className="w-6 h-6 mr-3" />
-              Falar com Miguel no WhatsApp
+              <span className='text-wrap'>
+                Falar com Miguel no WhatsApp
+              </span>
               <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
             </Button>
 

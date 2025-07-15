@@ -7,7 +7,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" id="hero">
+    <section className="relative pt-30 min-h-screen flex items-center justify-center overflow-hidden lg:pt-0" id="hero">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-950 to-black"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,255,0,0.05),transparent_50%)]"></div>
 
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
         <Button
           onClick={handleWhatsAppClick}
-          className="bg-green-500 hover:bg-green-600 text-black font-bold text-lg px-8 py-4 rounded-xl animate-glow transition-all duration-300 hover:scale-105"
+          className="bg-green-500 hover:bg-green-600 text-black font-bold text-lg px-8 py-4 rounded-xl animate-glow transition-all duration-300 hover:scale-105 cursor-pointer"
         >
           <MessageCircle className="w-5 h-5 mr-2" />
           Falar com Miguel no WhatsApp
