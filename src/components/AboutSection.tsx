@@ -1,10 +1,12 @@
 
 import { Award, Zap, TrendingDown } from 'lucide-react';
+import { CheckeredPattern } from './CheckeredPattern';
 
 const AboutSection = () => {
   return (
-    <section className="min-h-screen py-20 bg-gradient-to-t to-black from-gray-950" id="about">
-    {/* // <section className="py-20 bg-black"> */}
+    <section className="min-h-screen relative py-20 bg-gradient-to-t to-black from-gray-950" id="about">
+      <CheckeredPattern />
+
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Title */}
@@ -13,7 +15,7 @@ const AboutSection = () => {
               Conheça <span className="gradient-text">Miguel Bizzi</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Especialista em skins de CS:GO com anos de experiência no mercado, 
+              Especialista em skins de CS:GO com anos de experiência no mercado,
               oferecendo sempre os melhores preços e atendimento personalizado.
             </p>
           </div>
@@ -24,7 +26,7 @@ const AboutSection = () => {
             <div className="space-y-8">
               <div className="bg-gradient-to-r from-green-500/10 to-transparent border border-green-500/20 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-white mb-6">Por que escolher a Bizzi Skins?</h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="bg-green-500 p-2 rounded-lg mr-4 mt-1">
@@ -73,7 +75,7 @@ const AboutSection = () => {
 
               <h3 className="text-3xl font-bold text-white mb-4">Miguel Bizzi</h3>
               <p className="text-green-400 text-lg font-semibold mb-6">Especialista em Skins CS:GO</p>
-              
+
               <div className="bg-gray-800/50 rounded-xl p-6 max-w-md mx-auto">
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>

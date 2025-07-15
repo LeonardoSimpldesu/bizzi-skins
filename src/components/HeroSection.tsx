@@ -13,10 +13,6 @@ const HeroSection = () => {
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_40%_0%,#000_100%,transparent_120%)] animate-grid-slide pointer-events-none" />
 
-      {/* <div className="absolute top-20 left-10 w-2 h-2 bg-green-400 rounded-full animate-float opacity-60"></div>
-      <div className="absolute top-40 right-20 w-3 h-3 bg-green-300 rounded-full animate-float opacity-40" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute bottom-40 left-20 w-1 h-1 bg-green-500 rounded-full animate-float opacity-80" style={{ animationDelay: '4s' }}></div> */}
-
       <div className="container mx-auto px-6 text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           <span className="text-white">Negocie suas</span><br />

@@ -1,4 +1,5 @@
 import { Zap, DollarSign, Shield, Clock, TrendingUp, MessageCircle } from 'lucide-react';
+import { CheckeredPattern } from './CheckeredPattern';
 
 const FeaturesSection = () => {
   const features = [
@@ -41,7 +42,9 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-950 min-h-screen " id="features">
+    <section className="py-20 relative bg-gray-950 min-h-screen " id="features">
+      <CheckeredPattern />
+
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -50,7 +53,7 @@ const FeaturesSection = () => {
               Vantagens da <span className="gradient-text">Bizzi Skins</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Descubra por que milhares de jogadores confiam em nossos serviços 
+              Descubra por que milhares de jogadores confiam em nossos serviços
               para comprar e vender suas skins de CS:GO.
             </p>
           </div>
@@ -58,14 +61,14 @@ const FeaturesSection = () => {
           {/* Features Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div 
+              <div
                 key={index}
                 className="group bg-black/50 border border-green-500/20 rounded-2xl p-8 hover:border-green-500/40 transition-all duration-300 hover:scale-105"
               >
                 <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-8 h-8 text-black" />
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
                 <p className="text-gray-400 leading-relaxed">{feature.description}</p>
               </div>
@@ -94,4 +97,4 @@ const FeaturesSection = () => {
   );
 };
 
-export {FeaturesSection};
+export { FeaturesSection };
