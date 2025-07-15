@@ -4,6 +4,8 @@ import { FeaturesSection } from "./components/FeaturesSection"
 import { Footer } from "./components/Footer"
 import { HeroSection } from "./components/HeroSection"
 import { Menu } from "./components/Menu"
+import { SkinsGallerySection } from "./components/SkinGallerySection"
+import { SteamStatsSection } from "./components/SteamSection"
 import { TestimonialsSection } from "./components/TestimonialSection"
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <HeroSection />
 
       <AboutSection />
+      <SteamStatsSection />
+      <SkinsGallerySection />
       <FeaturesSection />
       <TestimonialsSection />
       <CTASection />

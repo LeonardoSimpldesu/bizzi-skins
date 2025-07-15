@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="min-h-screen py-20 bg-gradient-to-b from-black to-gray-900" id="testimonials">
+    <section className="min-h-screen py-20 bg-gradient-to-t to-gray-950 black from-black" id="testimonials">
       <div className="px-6">
         <div className="">
           <div className="text-center mb-16">
