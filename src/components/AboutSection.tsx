@@ -1,5 +1,5 @@
 
-import { Award, Zap, TrendingDown } from 'lucide-react';
+import { Award, Zap, TrendingDown, User } from 'lucide-react';
 import { CheckeredPattern } from './CheckeredPattern';
 
 const AboutSection = () => {
@@ -9,7 +9,6 @@ const AboutSection = () => {
 
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Conheça <span className="gradient-text">Miguel Bizzi</span>
@@ -20,9 +19,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* About Grid */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Stats */}
             <div className="space-y-8">
               <div className="bg-gradient-to-r from-green-500/10 to-transparent border border-green-500/20 rounded-2xl p-8">
                 <h3 className="text-2xl font-bold text-white mb-6">Por que escolher a Bizzi Skins?</h3>
@@ -61,11 +58,10 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Right Side - Profile */}
             <div className="text-center">
               <div className="relative inline-block mb-8">
                 <div className="w-48 h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto flex items-center justify-center animate-glow overflow-hidden ">
-                  {/* <User className="w-24 h-24 text-black" /> */}
+                  <User className="w-24 h-24 text-black" />
                   <img src="https://github.com/MiguelBizzi.png" alt="Foto de miguel bizzi" />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-green-500 p-3 rounded-full animate-float">

@@ -8,11 +8,11 @@ export const Menu = () => {
   const [backgroundStyle, setBackgroundStyle] = useState({});
   const navigationRef = useRef<HTMLDivElement>(null);
 
-  const sections = ['features', 'cta', 'hero', 'about', 'testimonials', 'steam-stats', 'skins-gallery'];
+  const sections = ['features', 'cta', 'hero', 'about', 'testimonials', 'how-it-works', 'skins-gallery'];
 
   const navigationLinks = [
     { id: 'about', label: 'Sobre' },
-    { id: 'steam-stats', label: 'Steam' },
+    { id: 'how-it-works', label: 'Negocie' },
     { id: 'skins-gallery', label: 'Skins' },
     { id: 'features', label: 'Vantagens' },
     { id: 'testimonials', label: 'Depoimentos' },
