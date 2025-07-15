@@ -58,7 +58,7 @@ export const SkinsGallerySection = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skins.map((skin, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-green-500/20 rounded-xl overflow-hidden hover:border-green-500/40 transition-all duration-300 hover:scale-105">
+              <div key={index} className="bg-gradient-to-bl from-green-950/80 to-black/50 border border-green-500/20 rounded-xl overflow-hidden hover:border-green-500/40 transition-all duration-300 hover:scale-105 backdrop-blur-xs">
                 <div className="relative">
                   <img
                     src={skin.image}

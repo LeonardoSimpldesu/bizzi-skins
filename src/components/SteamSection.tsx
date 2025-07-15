@@ -28,7 +28,7 @@ export const SteamStatsSection = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-green-500/20 rounded-xl p-6 text-center">
+            <div className="bg-gradient-to-br from-green-950/20 to-black/50 border border-green-500/20 rounded-xl p-6 text-center">
               <div className="bg-green-500 p-3 rounded-full inline-block mb-4">
                 <Trophy className="w-8 h-8 text-black" />
               </div>
@@ -36,7 +36,7 @@ export const SteamStatsSection = () => {
               <div className="text-gray-400">Horas Jogadas</div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-green-500/20 rounded-xl p-6 text-center">
+            <div className="bg-gradient-to-br from-green-950/20 to-black/50 border border-green-500/20 rounded-xl p-6 text-center">
               <div className="bg-green-500 p-3 rounded-full inline-block mb-4">
                 <Target className="w-8 h-8 text-black" />
               </div>
@@ -44,7 +44,7 @@ export const SteamStatsSection = () => {
               <div className="text-gray-400">Rank Atual</div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-green-500/20 rounded-xl p-6 text-center">
+            <div className="bg-gradient-to-br from-green-950/20 to-black/50 border border-green-500/20 rounded-xl p-6 text-center">
               <div className="bg-green-500 p-3 rounded-full inline-block mb-4">
                 <Shield className="w-8 h-8 text-black" />
               </div>
@@ -52,7 +52,7 @@ export const SteamStatsSection = () => {
               <div className="text-gray-400">Conta Steam</div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-green-500/20 rounded-xl p-6 text-center">
+            <div className="bg-gradient-to-br from-green-950/20 to-black/50 border border-green-500/20 rounded-xl p-6 text-center">
               <div className="bg-green-500 p-3 rounded-full inline-block mb-4">
                 <Star className="w-8 h-8 text-black" />
               </div>
@@ -61,7 +61,7 @@ export const SteamStatsSection = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-green-500/10 to-transparent border border-green-500/20 rounded-2xl p-8">
+          <div className="bg-gradient-to-r from-green-500/10 to-transparent border border-green-500/20 backdrop-blur-xs rounded-2xl p-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">Informações da Conta Steam</h3>
