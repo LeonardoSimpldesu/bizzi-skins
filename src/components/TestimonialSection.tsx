@@ -1,6 +1,9 @@
 
-import { Star, Quote } from 'lucide-react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Carousel, CarouselContent, CarouselItem } from './ui/carousel';
+import { Card, CardContent } from './ui/card';
+import Autoplay from "embla-carousel-autoplay";
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Quote, Star } from 'lucide-react';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -54,13 +57,10 @@ const TestimonialsSection = () => {
     }
   ];
 
-  const duplicatedTestimonials = [...testimonials, ...testimonials];
-
   return (
     <section className="py-20 bg-gradient-to-b from-black to-gray-900">
       <div className="px-6">
         <div className="">
-          {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               O que nossos <span className="gradient-text">clientes dizem</span>
@@ -71,54 +71,58 @@ const TestimonialsSection = () => {
             </p>
           </div>
 
-          {/* Continuous Scroll Testimonials */}
-          <div className="relative overflow-hidden py-4">
-            <div
-              className="flex gap-6 animate-scroll-continuous hover:pause-animation"
-              style={{
-                width: `${duplicatedTestimonials.length * 384}px`, // 384px = w-96 (width of each card)
-              }}
-            >
-              {duplicatedTestimonials.map((testimonial, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 w-96 bg-stone-950 border border-green-500/20 rounded-2xl p-6 hover:border-green-500/40 transition-all duration-300 hover:scale-105 relative"
-                >
-                  {/* Quote Icon */}
-                  <Quote className="w-8 h-8 text-green-400 mb-4 opacity-60" />
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
 
-                  {/* Rating */}
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-green-400 fill-current" />
-                    ))}
-                  </div>
+            }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+                stopOnInteraction: true,
+                playOnInit: true
+              })
+            ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="flex-shrink-0 w-96 md:basis-1/2 lg:basis-1/4 p-4">
+                  <Card className="bg-stone-950 border border-green-500/20 rounded-2xl p-6 h-full hover:border-green-500/40 transition-all duration-300 hover:scale-105 relative">
+                    <CardContent className="flex flex-col p-6">
+                      <Quote className="w-8 h-8 text-green-400 mb-4 opacity-60" />
 
-                  {/* Testimonial Text */}
-                  <p className="text-gray-300 mb-6 leading-relaxed italic">
-                    "{testimonial.text}"
-                  </p>
+                      <div className="flex mb-4">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="w-5 h-5 text-green-400 fill-current" />
+                        ))}
+                      </div>
 
-                  {/* Customer Info */}
-                  <div className="flex items-center space-x-4 mt-auto">
-                    <Avatar className="w-12 h-12">
-                      <AvatarImage src={`/placeholder.svg`} alt={testimonial.name} />
-                      <AvatarFallback className="bg-green-500 text-black font-bold">
-                        {testimonial.avatar}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <div className="font-semibold text-white">{testimonial.name}</div>
-                      <div className="text-sm text-gray-400">{testimonial.location}</div>
-                      <div className="text-xs text-green-400">{testimonial.knife}</div>
-                    </div>
-                  </div>
-                </div>
+                      <p className="text-gray-300 mb-6 leading-relaxed italic">
+                        "{testimonial.text}"
+                      </p>
+
+                      <div className="flex items-center space-x-4 mt-auto">
+                        <Avatar className="w-12 h-12">
+                          <AvatarImage src={`/placeholder.svg`} alt={testimonial.name} />
+                          <AvatarFallback className="bg-green-500 text-black font-bold">
+                            {testimonial.avatar}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <div className="font-semibold text-white">{testimonial.name}</div>
+                          <div className="text-sm text-gray-400">{testimonial.location}</div>
+                          <div className="text-xs text-green-400">{testimonial.knife}</div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
               ))}
-            </div>
-          </div>
+            </CarouselContent>
+          </Carousel>
 
-          {/* Trust Stats */}
           <div className="mt-16 text-center">
             <div className="bg-gradient-to-r from-green-500/10 to-green-600/10 border border-green-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
               <div className="grid md:grid-cols-4 gap-8">
