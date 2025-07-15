@@ -37,7 +37,7 @@ export const HowItWorksSection = () => {
   ];
 
   return (
-    <section className="pt-40 relative min-h-screen bg-gradient-to-t to-gray-950 black from-black" id='how-it-works'>
+    <section className="pb-40 pt-30 relative bg-gradient-to-t to-gray-950 black from-black" id='how-it-works'>
       <CheckeredPattern />
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
