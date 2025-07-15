@@ -1,5 +1,5 @@
 
-import { User, Award, Zap, TrendingDown } from 'lucide-react';
+import { Award, Zap, TrendingDown } from 'lucide-react';
 
 const AboutSection = () => {
   return (

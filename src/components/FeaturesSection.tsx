@@ -41,8 +41,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    // <section className="py-20 bg-gradient-to-b to-black from-gray-950">
-    <section className="py-20 bg-gray-950">
+    <section className="py-20 bg-gray-950" id="features">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}

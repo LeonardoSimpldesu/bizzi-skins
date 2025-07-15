@@ -7,7 +7,6 @@ const CTASection = () => {
   };
 
   return (
-    // <section className="py-20 bg-gradient-to-t to-black from-gray-950">
     <section className="py-20 bg-gray-950">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
