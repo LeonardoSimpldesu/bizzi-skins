@@ -3,7 +3,7 @@ import { Award, Zap, TrendingDown } from 'lucide-react';
 
 const AboutSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-t to-black from-gray-950">
+    <section className="min-h-screen py-20 bg-gradient-to-t to-black from-gray-950" id="about">
     {/* // <section className="py-20 bg-black"> */}
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">

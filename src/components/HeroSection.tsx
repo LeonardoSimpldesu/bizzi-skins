@@ -7,7 +7,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" id="hero">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-950 to-black"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,255,0,0.05),transparent_50%)]"></div>
 
@@ -18,14 +18,9 @@ const HeroSection = () => {
       <div className="absolute bottom-40 left-20 w-1 h-1 bg-green-500 rounded-full animate-float opacity-80" style={{ animationDelay: '4s' }}></div> */}
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-500/10 border border-green-500/20 mb-8 animate-glow">
-          <Zap className="w-4 h-4 text-green-400 mr-2" />
-          <span className="text-green-400 text-sm font-medium">Melhor preço do mercado</span>
-        </div>
-
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-white">Compre suas</span><br />
-          <span className="gradient-text">Facas de CS:GO</span><br />
+          <span className="text-white">Negocie suas</span><br />
+          <span className="gradient-text">Skins de CS:GO</span><br />
           <span className="text-white">com segurança</span>
         </h1>
 
