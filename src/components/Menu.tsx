@@ -6,10 +6,12 @@ export const Menu = () => {
   const [backgroundStyle, setBackgroundStyle] = useState({});
   const navigationRef = useRef<HTMLDivElement>(null);
 
-  const sections = ['features', 'cta', 'hero', 'about', 'testimonials'];
+  const sections = ['features', 'cta', 'hero', 'about', 'testimonials', 'steam-stats', 'skins-gallery'];
 
   const navigationLinks = [
     { id: 'about', label: 'Sobre' },
+    { id: 'steam-stats', label: 'Steam' },
+    { id: 'skins-gallery', label: 'Skins' },
     { id: 'features', label: 'Vantagens' },
     { id: 'testimonials', label: 'Depoimentos' },
     { id: 'cta', label: 'Contato' }
@@ -37,7 +39,7 @@ export const Menu = () => {
     if (activeButton) {
       const containerRect = navigationRef.current.getBoundingClientRect();
       const buttonRect = activeButton.getBoundingClientRect();
-      
+
       const left = buttonRect.left - containerRect.left;
       const width = buttonRect.width;
       const height = buttonRect.height;
@@ -99,7 +101,7 @@ export const Menu = () => {
   const isActive = (sectionId: string) => currentSection === sectionId;
 
   return (
-    <nav className={twMerge('fixed top-8 inset-x-0 mx-auto w-3xl z-50 bg-black/95 backdrop-blur-sm border rounded-full border-green-500/20 transition-all duration-300', isActive('hero') && 'w-4xl')}>
+    <nav className={twMerge('fixed top-4 inset-x-0 mx-auto w-5xl z-50 bg-black/95 backdrop-blur-sm border rounded-full border-green-500/20 transition-all duration-300 opacity-90', isActive('hero') && 'w-6xl opacity-100 top-6')}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
@@ -110,19 +112,19 @@ export const Menu = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8 relative" ref={navigationRef}>
-            <div 
+            <div
               className="absolute bg-gradient-to-br from-green-400 to-green-600 rounded-full transition-all duration-300 ease-in-out"
               style={backgroundStyle}
             />
-            
+
             {navigationLinks.map((link) => (
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
                 className={twMerge(
                   'relative z-10 transition-all duration-300 cursor-pointer font-medium px-4 py-2 rounded-full',
-                  isActive(link.id) 
-                    ? 'text-black hover:scale-105' 
+                  isActive(link.id)
+                    ? 'text-black hover:scale-105'
                     : 'text-gray-300 hover:text-green-400'
                 )}
               >

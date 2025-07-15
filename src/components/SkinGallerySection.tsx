@@ -42,7 +42,7 @@ export const SkinsGallerySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-t to-black from-gray-950" id='skins-gallery'>
+    <section className="py-20 min-h-screen bg-gradient-to-t to-black from-gray-950" id='skins-gallery'>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

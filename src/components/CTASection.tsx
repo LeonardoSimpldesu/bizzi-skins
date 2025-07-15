@@ -10,7 +10,6 @@ const CTASection = () => {
     <section className="min-h-screen py-20 bg-gradient-to-t to-black from-gray-950" id="cta">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Main CTA */}
           <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 border border-green-500/30 rounded-3xl p-12 animate-glow">
             <div className="flex justify-center mb-6">
               <div className="flex gap-2">
@@ -31,7 +30,6 @@ const CTASection = () => {
               Na Bizzi Skins você recebe na hora e pelo melhor preço!
             </p>
 
-            {/* Benefits List */}
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               <div className="bg-black/30 rounded-xl p-4">
                 <div className="text-green-400 font-bold text-lg mb-1">Pagamento</div>

@@ -3,7 +3,7 @@ import { ExternalLink, Shield, Star, Trophy, Target } from 'lucide-react';
 
 export const SteamStatsSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-t to-gray-950 black from-black" id="steam-stats">
+    <section className="py-20 min-h-screen bg-gradient-to-t to-gray-950 black from-black" id="steam-stats">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
